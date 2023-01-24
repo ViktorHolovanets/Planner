@@ -36,7 +36,10 @@ class GroupController extends Controller
      */
     public function store(StoreGroupRequest $request)
     {
-        //
+        $data=$request->validated();
+
+        Group::create($data);
+        return redirect()->route('students.index');
     }
 
     /**

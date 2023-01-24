@@ -4,13 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d559b5e5-b507-4e85-8fce-81e69ea51e17" name="Changes" comment="" />
+    <list default="true" id="d559b5e5-b507-4e85-8fce-81e69ea51e17" name="Changes" comment="model migrate">
+      <change afterPath="$PROJECT_DIR$/planner-app/resources/views/Source/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/planner-app/resources/views/Student/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/planner-app/resources/views/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/planner-app/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner-app/app/Http/Controllers/GroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/planner-app/app/Http/Controllers/GroupController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner-app/app/Http/Controllers/MeetingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/planner-app/app/Http/Controllers/MeetingController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner-app/app/Http/Controllers/SourceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/planner-app/app/Http/Controllers/SourceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner-app/app/Http/Controllers/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/planner-app/app/Http/Controllers/StudentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner-app/app/Http/Controllers/TeacherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/planner-app/app/Http/Controllers/TeacherController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner-app/app/Http/Requests/StoreGroupRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/planner-app/app/Http/Requests/StoreGroupRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner-app/app/Http/Requests/StoreMeetingRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/planner-app/app/Http/Requests/StoreMeetingRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner-app/app/Http/Requests/StoreStudentRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/planner-app/app/Http/Requests/StoreStudentRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner-app/app/Http/Requests/StoreTeacherRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/planner-app/app/Http/Requests/StoreTeacherRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner-app/app/Http/Requests/StoresourceRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/planner-app/app/Http/Requests/StoreSourceRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner-app/app/Http/Requests/UpdateGroupRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/planner-app/app/Http/Requests/UpdateGroupRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner-app/app/Http/Requests/UpdateMeetingRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/planner-app/app/Http/Requests/UpdateMeetingRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner-app/app/Http/Requests/UpdateStudentRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/planner-app/app/Http/Requests/UpdateStudentRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner-app/app/Http/Requests/UpdateTeacherRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/planner-app/app/Http/Requests/UpdateTeacherRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner-app/app/Http/Requests/UpdatesourceRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/planner-app/app/Http/Requests/UpdateSourceRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner-app/app/Models/Group.php" beforeDir="false" afterPath="$PROJECT_DIR$/planner-app/app/Models/Group.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner-app/app/Models/Meeting.php" beforeDir="false" afterPath="$PROJECT_DIR$/planner-app/app/Models/Meeting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner-app/app/Models/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/planner-app/app/Models/Student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner-app/app/Models/Teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/planner-app/app/Models/Teacher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner-app/app/Models/source.php" beforeDir="false" afterPath="$PROJECT_DIR$/planner-app/app/Models/Source.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner-app/database/migrations/2023_01_21_161257_create_groups_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/planner-app/database/migrations/2023_01_21_161257_create_groups_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner-app/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/planner-app/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner-app/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/planner-app/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/planner-app/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/planner-app/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/planner-app/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -143,7 +173,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/PHP&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/PHP/Planner&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -152,6 +182,28 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\PHP\Planner\planner-app\storage\app\public\adminlte" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/planner-app/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -161,8 +213,32 @@
       <option name="presentableId" value="Default" />
       <updated>1674307762028</updated>
       <workItem from="1674307763523" duration="1060000" />
-      <workItem from="1674311580217" duration="7011000" />
+      <workItem from="1674311580217" duration="10366000" />
+      <workItem from="1674331407252" duration="1000" />
+      <workItem from="1674331499684" duration="13595000" />
+      <workItem from="1674347298004" duration="4005000" />
+      <workItem from="1674377636984" duration="29360000" />
+      <workItem from="1674411441231" duration="2880000" />
+      <workItem from="1674476146587" duration="18002000" />
+      <workItem from="1674555160945" duration="4608000" />
+      <workItem from="1674569728802" duration="590000" />
+      <workItem from="1674573167157" duration="5034000" />
     </task>
+    <task id="LOCAL-00001" summary="mosel migrate">
+      <created>1674319629618</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674319629618</updated>
+    </task>
+    <task id="LOCAL-00002" summary="model migrate">
+      <created>1674319751105</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674319751105</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,5 +254,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="mosel migrate" />
+    <MESSAGE value="model migrate" />
+    <option name="LAST_COMMIT_MESSAGE" value="model migrate" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/planner-app/storage/app/public/js/calendar.js</url>
+          <line>20</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -15,7 +15,9 @@ class StudentController extends Controller
      */
     public function index()
     {
-        //
+        return view('student.index',[
+            'groups'=>\App\Models\Group::where('teacher_id',1)->get(),
+        ]);
     }
 
     /**
@@ -36,7 +38,10 @@ class StudentController extends Controller
      */
     public function store(StoreStudentRequest $request)
     {
-        //
+        $data=$request->validated();
+        //dd($data);
+        Student::create($data);
+        return redirect()->route('students.index');
     }
 
     /**
@@ -81,6 +86,7 @@ class StudentController extends Controller
      */
     public function destroy(Student $student)
     {
-        //
+        $student->delete();
+        return redirect()->route('students.index');
     }
 }

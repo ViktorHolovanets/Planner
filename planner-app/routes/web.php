@@ -1,5 +1,6 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +15,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
-Route::resource('/teacher', \App\Models\Teacher::class);
-Route::resource('/student', \App\Models\Student::class);
-Route::resource('/source', \App\Models\Source::class);
-Route::resource('/meeting', \App\Models\Meeting::class);
+Route::resource('/teachers', \App\Http\Controllers\TeacherController::class);
+Route::resource('/students', \App\Http\Controllers\StudentController::class);
+Route::resource('/sources', \App\Http\Controllers\SourceController::class);
+
+Route::resource('/meetings', \App\Http\Controllers\MeetingController::class)->except(['index']);
+
+Route::resource('/groups', \App\Http\Controllers\GroupController::class);
+

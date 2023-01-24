@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoresourceRequest extends FormRequest
+class StoreSourceRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -13,7 +13,7 @@ class StoresourceRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,9 @@ class StoresourceRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'description' => 'string',
+            'link' => 'required|string',
+            'teacher_id' => 'integer',
         ];
     }
 }

@@ -15,7 +15,8 @@ class MeetingController extends Controller
      */
     public function index()
     {
-        //
+        //dd(json_encode(Meeting::all()));
+        return Meeting::query()->with('student')->get();
     }
 
     /**

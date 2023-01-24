@@ -15,7 +15,9 @@ class SourceController extends Controller
      */
     public function index()
     {
-        //
+//        $source=Source::find(1);
+//        $source->students()->attach([2,]);
+        return view('source.index');
     }
 
     /**
@@ -31,21 +33,26 @@ class SourceController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoresourceRequest  $request
+     * @param \App\Http\Requests\StoresourceRequest $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoresourceRequest $request)
+    public function store(StoreSourceRequest $request)
     {
-        //
+        // dd($request);
+        $data = $request->validated();
+        //dd($data);
+
+        Source::create($data);
+        return redirect()->route('sources.index');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\source  $source
+     * @param \App\Models\Source $source
      * @return \Illuminate\Http\Response
      */
-    public function show(source $source)
+    public function show(Source $source)
     {
         //
     }
@@ -53,10 +60,10 @@ class SourceController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\source  $source
+     * @param \App\Models\Source $source
      * @return \Illuminate\Http\Response
      */
-    public function edit(source $source)
+    public function edit(Source $source)
     {
         //
     }
@@ -64,23 +71,28 @@ class SourceController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdatesourceRequest  $request
-     * @param  \App\Models\source  $source
+     * @param \App\Http\Requests\UpdatesourceRequest $request
+     * @param \App\Models\Sourceource $source
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdatesourceRequest $request, source $source)
+    public function update(UpdateSourceRequest $request, Source $source)
     {
-        //
+        //dd($request);
+        $data = $request->validated();
+        //dd($data);
+        $source->update($data);
+        return redirect()->route('sources.index');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\source  $source
+     * @param \App\Models\Source $source
      * @return \Illuminate\Http\Response
      */
-    public function destroy(source $source)
+    public function destroy(Source $source)
     {
-        //
+        $source->delete();
+        return redirect()->route('sources.index');
     }
 }

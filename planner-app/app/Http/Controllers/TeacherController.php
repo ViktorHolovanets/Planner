@@ -15,7 +15,9 @@ class TeacherController extends Controller
      */
     public function index()
     {
-        //
+        $r=Teacher::all();
+        dd($r);
+        return "Teacher::all();";
     }
 
     /**
