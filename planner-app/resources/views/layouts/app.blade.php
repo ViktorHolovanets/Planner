@@ -9,25 +9,25 @@
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="storage/adminlte/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./adminlte/plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Tempusdominus Bootstrap 4 -->
     <link rel="stylesheet"
-          href="storage/adminlte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+          href="./adminlte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
     <!-- iCheck -->
-    <link rel="stylesheet" href="storage/adminlte/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <link rel="stylesheet" href="./adminlte/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     <!-- JQVMap -->
-    <link rel="stylesheet" href="storage/adminlte/plugins/jqvmap/jqvmap.min.css">
+    <link rel="stylesheet" href="./adminlte/plugins/jqvmap/jqvmap.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="storage/adminlte/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="./adminlte/dist/css/adminlte.min.css">
     <!-- overlayScrollbars -->
-    <link rel="stylesheet" href="storage/adminlte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="./adminlte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- Daterange picker -->
-    <link rel="stylesheet" href="storage/adminlte/plugins/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="./adminlte/plugins/daterangepicker/daterangepicker.css">
     <!-- summernote -->
-    <link rel="stylesheet" href="storage/adminlte/plugins/summernote/summernote-bs4.min.css">
-    <link rel="stylesheet" href="storage/css/calendar.css">
+    <link rel="stylesheet" href="./adminlte/plugins/summernote/summernote-bs4.min.css">
+    @vite('resources/css/app.css')
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -101,7 +101,7 @@
                     <a href="#" class="dropdown-item">
                         <!-- Message Start -->
                         <div class="media">
-                            <img src="storage/adminlte/dist/img/user1-128x128.jpg" alt="User Avatar"
+                            <img src="./adminlte/dist/img/user1-128x128.jpg" alt="User Avatar"
                                  class="img-size-50 mr-3 img-circle">
                             <div class="media-body">
                                 <h3 class="dropdown-item-title">
@@ -118,7 +118,7 @@
                     <a href="#" class="dropdown-item">
                         <!-- Message Start -->
                         <div class="media">
-                            <img src="storage/adminlte/dist/img/user8-128x128.jpg" alt="User Avatar"
+                            <img src="./adminlte/dist/img/user8-128x128.jpg" alt="User Avatar"
                                  class="img-size-50 img-circle mr-3">
                             <div class="media-body">
                                 <h3 class="dropdown-item-title">
@@ -135,7 +135,7 @@
                     <a href="#" class="dropdown-item">
                         <!-- Message Start -->
                         <div class="media">
-                            <img src="storage/adminlte/dist/img/user3-128x128.jpg" alt="User Avatar"
+                            <img src="./adminlte/dist/img/user3-128x128.jpg" alt="User Avatar"
                                  class="img-size-50 img-circle mr-3">
                             <div class="media-body">
                                 <h3 class="dropdown-item-title">
@@ -206,7 +206,7 @@
             <!-- Sidebar user panel (optional) -->
             <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                 <div class="image">
-                    <img src="storage/adminlte/dist/img/user2-160x160.jpg" class="img-circle elevation-2"
+                    <img src="./adminlte/dist/img/user2-160x160.jpg" class="img-circle elevation-2"
                          alt="User Image">
                 </div>
                 <div class="info">
@@ -286,41 +286,41 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="storage/adminlte/plugins/jquery/jquery.min.js"></script>
+<script src="./adminlte/plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
-<script src="storage/adminlte/plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="./adminlte/plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
     $.widget.bridge('uibutton', $.ui.button)
 </script>
 <!-- Bootstrap 4 -->
-<script src="storage/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="./adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- ChartJS -->
-<script src="storage/adminlte/plugins/chart.js/Chart.min.js"></script>
+<script src="./adminlte/plugins/chart.js/Chart.min.js"></script>
 <!-- Sparkline -->
-<script src="storage/adminlte/plugins/sparklines/sparkline.js"></script>
+<script src="./adminlte/plugins/sparklines/sparkline.js"></script>
 <!-- JQVMap -->
-<script src="storage/adminlte/plugins/jqvmap/jquery.vmap.min.js"></script>
-<script src="storage/adminlte/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<script src="./adminlte/plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="./adminlte/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
 <!-- jQuery Knob Chart -->
-<script src="storage/adminlte/plugins/jquery-knob/jquery.knob.min.js"></script>
+<script src="./adminlte/plugins/jquery-knob/jquery.knob.min.js"></script>
 <!-- daterangepicker -->
-<script src="storage/adminlte/plugins/moment/moment.min.js"></script>
-<script src="storage/adminlte/plugins/daterangepicker/daterangepicker.js"></script>
+<script src="./adminlte/plugins/moment/moment.min.js"></script>
+<script src="./adminlte/plugins/daterangepicker/daterangepicker.js"></script>
 <!-- Tempusdominus Bootstrap 4 -->
-<script src="storage/adminlte/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="./adminlte/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 <!-- Summernote -->
-<script src="storage/adminlte/plugins/summernote/summernote-bs4.min.js"></script>
+<script src="./adminlte/plugins/summernote/summernote-bs4.min.js"></script>
 <!-- overlayScrollbars -->
-<script src="storage/adminlte/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<script src="./adminlte/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App -->
-<script src="storage/adminlte/dist/js/adminlte.js"></script>
+<script src="./adminlte/dist/js/adminlte.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="storage/adminlte/dist/js/demo.js"></script>
+<script src="./adminlte/dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="storage/adminlte/dist/js/pages/dashboard.js"></script>
+<script src="./adminlte/dist/js/pages/dashboard.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script src="storage/js/calendar.js"></script>
+
 @vite('resources/js/app.js')
 
 </body>
