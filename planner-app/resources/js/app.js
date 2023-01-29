@@ -1,4 +1,3 @@
-import './bootstrap';
 $(() => {
     $('#update-source').fadeOut();
     $( "#btn-new-source" ).fadeOut();
@@ -37,5 +36,8 @@ $(() => {
         $('#create-student').fadeIn();
         $('#update-student').fadeOut();
         $( "#btn-new-student" ).fadeOut();
+    });
+    $('.btn-new-meeting').on('click', function () {
+        $('#modal-student-id').val($(this).data('student'));
     });
 });

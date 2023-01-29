@@ -26,7 +26,7 @@ class StoreSourceRequest extends FormRequest
         return [
             'description' => 'string',
             'link' => 'required|string',
-            'teacher_id' => 'integer',
+            'user_id' => 'integer',
         ];
     }
 }

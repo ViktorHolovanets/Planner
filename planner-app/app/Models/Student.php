@@ -9,7 +9,8 @@ class Student extends Model
 {
     use HasFactory;
     protected $guarded=[];
-    public  function meetings(){
+    public  function meetings()
+    {
         return $this->hasMany(Meeting::class);
     }
     public  function sources()

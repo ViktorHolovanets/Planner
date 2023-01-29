@@ -63,7 +63,7 @@
                         <input type="text" class="form-control" placeholder="Enter link" name="link">
 
                     </div>
-                    <input type="hidden" name="teacher_id" value="1">
+                    <input type="hidden" name="user_id" value="{{\Illuminate\Support\Facades\Auth::id()}}">
                     <button type="submit" class="btn btn-primary">Create</button>
                 </form>
             </div>
@@ -80,7 +80,7 @@
                         <label for="exampleInputPassword1">Link</label>
                         <input type="text" class="form-control" placeholder="Enter link" name="link">
                     </div>
-                    <input type="hidden" name="teacher_id" value="1">
+                    <input type="hidden" name="user_id" value="{{\Illuminate\Support\Facades\Auth::id()}}">
                     <button type="submit" class="btn btn-primary">Update</button>
                 </form>
             </div>

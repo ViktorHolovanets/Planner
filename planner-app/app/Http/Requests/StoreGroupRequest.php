@@ -25,7 +25,7 @@ class StoreGroupRequest extends FormRequest
     {
         return [
             'name'=>'string',
-            'teacher_id'=>''
+            'user_id'=>''
         ];
     }
 }

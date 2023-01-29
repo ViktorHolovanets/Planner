@@ -13,15 +13,25 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-
-
-                                Form create meeting for student
-
-
+                                <form action="{{route('meetings.store')}}" method="post" class="d-inline">
+                                    @csrf
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Theme</label>
+                                        <input type="text" class="form-control" placeholder="Enter name" name="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="date" class="form-control" placeholder="Enter name" name="date" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Time</label>
+                                        <input type="time" class="form-control" placeholder="Enter name" name="time" required>
+                                    </div>
+                                    <input type="hidden" name="student_id" id="modal-student-id">
+                                    <input type="submit" value="Add" class="btn btn-outline-success">
+                                </form>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
                             </div>
                         </div>
                     </div>
@@ -31,7 +41,7 @@
                         <div class="card-header" id="heading{{$student->id}}">
                             <h2 class="mb-0">
                                 <div class="d-flex justify-content-between">
-                                    <p data-id="{{$student->id}}">{{$student->name}}</p>
+                                    <a href="{{route('students.show',$student->id)}}" data-id="{{$student->id}}">{{$student->name}}</a>
                                     <div class="h6">
                                         <form action="{{route('students.destroy', $student->id)}}" method="post" class="d-inline">
                                             @csrf
@@ -57,7 +67,7 @@
                         <div id="collapse{{$student->id}}" class="collapse show" aria-labelledby="heading{{$student->id}}"
                              data-parent="#accordionExample">
                             <div class="card-body">
-                                <button type="button" class="btn btn-outline-light h6" data-toggle="modal" data-target="#modalCreateMeeting">
+                                <button type="button" class="btn btn-outline-light h6 btn-new-meeting" data-toggle="modal" data-target="#modalCreateMeeting" data-student="{{$student->id}}">
                                     +New
                                 </button>
                                 <ul>
@@ -91,7 +101,7 @@
                             @endforeach
                         </select>
                     </div>
-                    <input type="hidden" name="teacher_id" value="1">
+                    <input type="hidden" name="user_id" value="{{\Illuminate\Support\Facades\Auth::id()}}">
                     <button type="submit" class="btn btn-primary">Create</button>
                 </form>
             </div>
@@ -125,8 +135,8 @@
                         <label for="exampleInputEmail1">Name</label>
                         <input type="text" class="form-control" placeholder="Enter name" name="name">
                     </div>
-                    <!-- todo teacher_id -->
-                    <input type="hidden" name="teacher_id" value="1">
+                    <!-- todo user_id -->
+                    <input type="hidden" name="user_id" value="{{\Illuminate\Support\Facades\Auth::id()}}">
                     <button type="submit" class="btn btn-primary">Create</button>
                 </form>
             </div>

@@ -24,7 +24,10 @@ class StoreMeetingRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name'=>'string|nullable',
+            'date'=>'date|required',
+            'time'=>'date_format:H:i|required',
+            'student_id'=>'integer',
         ];
     }
 }

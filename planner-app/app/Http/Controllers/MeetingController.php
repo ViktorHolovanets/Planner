@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Meeting;
 use App\Http\Requests\StoreMeetingRequest;
 use App\Http\Requests\UpdateMeetingRequest;
+use Illuminate\Support\Facades\Auth;
 
 class MeetingController extends Controller
 {
@@ -37,7 +38,12 @@ class MeetingController extends Controller
      */
     public function store(StoreMeetingRequest $request)
     {
-        //
+        $data=$request->validated();
+        $data['time_work']=$data['date']." ".$data['time'];
+        $data['user_id']=Auth::id();
+        unset($data['date'],$data['time']);
+        Meeting::create($data);
+        return redirect()->route('students.index');
     }
 
     /**

@@ -16,12 +16,21 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
-});
-Route::resource('/teachers', \App\Http\Controllers\TeacherController::class);
-Route::resource('/students', \App\Http\Controllers\StudentController::class);
-Route::resource('/sources', \App\Http\Controllers\SourceController::class);
+})->middleware('auth');
 
-Route::resource('/meetings', \App\Http\Controllers\MeetingController::class)->except(['index']);
 
-Route::resource('/groups', \App\Http\Controllers\GroupController::class);
+Route::resource('/students', \App\Http\Controllers\StudentController::class)->middleware('auth');
+
+Route::post('/students/addsource', [\App\Http\Controllers\StudentController::class, 'addSourse'])->middleware('auth')->name('students.addsource');
+Route::post('/students/delsource', [\App\Http\Controllers\StudentController::class, 'delSourse'])->middleware('auth')->name('students.delsource');
+
+Route::resource('/sources', \App\Http\Controllers\SourceController::class)->middleware('auth');
+
+Route::resource('/meetings', \App\Http\Controllers\MeetingController::class)->except(['index'])->middleware('auth');
+
+Route::resource('/groups', \App\Http\Controllers\GroupController::class)->middleware('auth');
+
+
+Auth::routes();
+
 

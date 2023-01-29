@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('description');
             $table->string('link');
-            $table->unsignedBigInteger('teacher_id');
+            $table->unsignedBigInteger('user_id');
             $table->timestamps();
         });
     }
