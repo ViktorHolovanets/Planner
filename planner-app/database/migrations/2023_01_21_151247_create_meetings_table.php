@@ -20,6 +20,8 @@ return new class extends Migration
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('student_id');
             $table->timestamps();
+
+
         });
     }
 

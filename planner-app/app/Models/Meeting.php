@@ -21,13 +21,12 @@ class Meeting extends Model
 
     static public function getCasheMeetingsToday()
     {
-        $value = Cache::remember('users', 1800, function () {
-            return self::query()->with('student')
+        $value =  self::query()->with('student')
                 ->where('user_id',Auth::id())
                 ->whereDay('time_work', date('d'))
                 ->whereMonth('time_work', date('m'))
                 ->get();
-        });
+        
         return $value;
     }
 }
